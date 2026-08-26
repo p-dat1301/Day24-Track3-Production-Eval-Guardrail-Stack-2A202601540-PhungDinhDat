@@ -1,13 +1,46 @@
 """Shared configuration for Lab 24: Eval + Guardrail Stack."""
 
 import os
-from dotenv import load_dotenv
+from functools import lru_cache
+from typing import Any
+
+try:
+    from dotenv import load_dotenv
+except ImportError:
+
+    def load_dotenv() -> bool:
+        return False
+
 
 load_dotenv()
 
 # --- API Keys ---
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 HF_TOKEN = os.getenv("HF_TOKEN", "")  # Optional: for HuggingFace models
+LLM_API_KEY = os.getenv("LLM_API_KEY", OPENAI_API_KEY)
+LLM_PROVIDER = os.getenv("LLM_PROVIDER", "openai")
+LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
+LLM_BASE_URL = os.getenv("LLM_BASE_URL", "") or None
+LLM_MAX_RETRIES = int(os.getenv("LLM_MAX_RETRIES", "2"))
+LLM_TIMEOUT = float(os.getenv("LLM_TIMEOUT", "60"))
+ENRICH_WITH_LLM = os.getenv("ENRICH_WITH_LLM", "0").lower() in {"1", "true", "yes"}
+MODEL_DEVICE = os.getenv("MODEL_DEVICE", "cpu")
+
+
+@lru_cache(maxsize=1)
+def get_llm_client() -> Any:
+    """Create OpenAI-compatible client only when online path requests it."""
+    from openai import OpenAI
+
+    kwargs: dict[str, Any] = {
+        "api_key": LLM_API_KEY,
+        "max_retries": LLM_MAX_RETRIES,
+        "timeout": LLM_TIMEOUT,
+    }
+    if LLM_BASE_URL:
+        kwargs["base_url"] = LLM_BASE_URL
+    return OpenAI(**kwargs)
+
 
 # --- Qdrant (same as Day 18) ---
 QDRANT_HOST = "localhost"
@@ -34,7 +67,9 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 TEST_SET_PATH = os.path.join(os.path.dirname(__file__), "test_set_50q.json")
 ANSWERS_PATH = os.path.join(os.path.dirname(__file__), "answers_50q.json")
 HUMAN_LABELS_PATH = os.path.join(os.path.dirname(__file__), "human_labels_10q.json")
-ADVERSARIAL_SET_PATH = os.path.join(os.path.dirname(__file__), "adversarial_set_20.json")
+ADVERSARIAL_SET_PATH = os.path.join(
+    os.path.dirname(__file__), "adversarial_set_20.json"
+)
 GUARDRAILS_CONFIG_DIR = os.path.join(os.path.dirname(__file__), "guardrails")
 
 # --- LLM Judge ---
@@ -42,4 +77,6 @@ JUDGE_MODEL = "gpt-4o-mini"
 
 # --- Guardrail latency budget ---
 LATENCY_BUDGET_P95_MS = 500  # target: full guard stack P95 < 500ms
-PRESIDIO_LANGUAGE = "en"    # Presidio base language; custom VN recognizers added via PatternRecognizer
+PRESIDIO_LANGUAGE = (
+    "en"  # Presidio base language; custom VN recognizers added via PatternRecognizer
+)

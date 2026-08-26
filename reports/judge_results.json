@@ -1,0 +1,236 @@
+{
+  "provenance": "offline_deterministic",
+  "judge_model": "lexical_fallback",
+  "judged_pairs": [
+    {
+      "question": "Nhân viên được nghỉ bao nhiêu ngày khi kết hôn?",
+      "answer_a": "# Chính sách nghỉ phép đặc biệt\n> Phiên bản: 1.1 | Ngày hiệu lực: 01/03/2024 | Phòng ban: Nhân sự\n\n## Các trường hợp được nghỉ phép đặc biệt\nNhân viên được nghỉ có lương trong các trường hợp sau đây mà không trừ vào phép năm:\n- **Kết hôn**: 3 ngày làm việc\n- **Tang lễ** (cha mẹ, vợ/chồng, con): 3 ngày làm việc\n- **Sinh con** (nam giới): 5 ngày làm việc liên tục\n- **Con kết hôn**: 1 ngày làm việc\n\n## Hồ sơ cần thiết\nNhân viên cần cung cấp giấy tờ chứng minh trong vòng 5 ngày làm việc sau khi quay lại: giấy đăng ký kết hôn, giấy khai tử, giấy khai sinh. Trường hợp không cung cấp đầy đủ, số ngày nghỉ sẽ bị trừ vào phép năm.\n\n## Lưu ý\nPhép đặc biệt không cộng dồn và không chuyển sang năm sau. Ngày nghỉ được tính liên tục bao gồm cả ngày nghỉ cuối tuần nếu rơi vào giữa kỳ nghỉ.\n",
+      "answer_b": "Nhân viên được nghỉ 3 ngày làm việc có lương khi kết hôn, không trừ vào phép năm.",
+      "winner_pass1": "A",
+      "winner_pass2": "A",
+      "final_winner": "A",
+      "reasoning_pass1": "Deterministic fallback selected answer A by lexical relevance and content coverage.",
+      "reasoning_pass2": "Deterministic fallback selected answer B by lexical relevance and content coverage.",
+      "position_consistent": true,
+      "scores_pass1": {
+        "A": 0.93,
+        "B": 0.712
+      },
+      "scores_pass2": {
+        "A": 0.93,
+        "B": 0.712
+      }
+    },
+    {
+      "question": "Muốn mua thiết bị trị giá 55 triệu cần ai phê duyệt?",
+      "answer_a": "# Quy trình mua sắm\n> Phiên bản: 2.2 | Ngày hiệu lực: 01/04/2024 | Phòng ban: Hành chính & Tài chính\n\n## Thẩm quyền phê duyệt\n| Giá trị đơn hàng | Người phê duyệt |\n|-------------------|-----------------|\n| Dưới **5.000.000 VNĐ** | Trưởng phòng (Manager) |\n| Từ **5.000.000 - 50.000.000 VNĐ** | Giám đốc phòng ban (Director) |\n| Trên **50.000.000 VNĐ** | Tổng Giám đốc (CEO) |\n\n## Quy trình đề xuất\n1. Tạo phiếu đề xuất mua sắm trên hệ thống Procurement Portal\n2. Đính kèm ít nhất 3 báo giá cho đơn hàng trên 10.000.000 VNĐ\n3. Chờ phê duyệt theo thẩm quyền tương ứng\n4. Phòng Mua sắm đặt hàng và theo dõi giao nhận\n\n## Lưu ý đặc biệt\nMua sắm thiết bị CNTT (laptop, server, phần mềm) cần có xác nhận của phòng CNTT về cấu hình kỹ thuật trước khi đề xuất. Đơn hàng khẩn cấp có thể bỏ qua yêu cầu 3 báo giá nhưng phải có giải trình bằng văn bản.\n",
+      "answer_b": "Đơn hàng trên 50.000.000 VNĐ cần Tổng Giám đốc (CEO) phê duyệt.",
+      "winner_pass1": "A",
+      "winner_pass2": "A",
+      "final_winner": "A",
+      "reasoning_pass1": "Deterministic fallback selected answer A by lexical relevance and content coverage.",
+      "reasoning_pass2": "Deterministic fallback selected answer B by lexical relevance and content coverage.",
+      "position_consistent": true,
+      "scores_pass1": {
+        "A": 0.767,
+        "B": 0.293
+      },
+      "scores_pass2": {
+        "A": 0.767,
+        "B": 0.293
+      }
+    },
+    {
+      "question": "Thưởng Tết tối thiểu cho nhân viên chính thức có từ 6 tháng trở lên là bao nhiêu?",
+      "answer_a": "# Chính sách thưởng Tết\n> Phiên bản: 2.0 | Ngày hiệu lực: 01/11/2024 | Phòng ban: Nhân sự & Tài chính\n\n## Mức thưởng tối thiểu\nTất cả nhân viên chính thức có thời gian làm việc từ 6 tháng trở lên được thưởng Tết tối thiểu **1 tháng lương**. Nhân viên dưới 6 tháng được hưởng pro-rata theo số tháng làm việc thực tế.\n\n## Tiêu chí tính thưởng\nMức thưởng Tết được tính dựa trên hai yếu tố chính:\n- **Kết quả đánh giá hiệu suất cá nhân** (trọng số 60%): dựa trên kết quả đánh giá cuối năm\n- **Kết quả kinh doanh của công ty** (trọng số 40%): nếu công ty đạt/vượt chỉ tiêu doanh thu\n\n## Thời gian chi trả\nThưởng Tết được chi trả trước ngày 25 tháng Chạp (âm lịch). Nhân viên nghỉ việc trước ngày chi trả sẽ không được hưởng thưởng Tết, trừ trường hợp nghỉ hưu hoặc hết hạn hợp đồng.\n",
+      "answer_b": "Nhân viên chính thức có thời gian làm việc từ 6 tháng trở lên được thưởng Tết tối thiểu 1 tháng lương. Nhân viên dưới 6 tháng được hưởng pro-rata theo số tháng làm việc thực tế.",
+      "winner_pass1": "tie",
+      "winner_pass2": "tie",
+      "final_winner": "tie",
+      "reasoning_pass1": "Deterministic fallback found equal scores.",
+      "reasoning_pass2": "Deterministic fallback found equal scores.",
+      "position_consistent": true,
+      "scores_pass1": {
+        "A": 0.844,
+        "B": 0.844
+      },
+      "scores_pass2": {
+        "A": 0.844,
+        "B": 0.844
+      }
+    },
+    {
+      "question": "Một nhân viên Senior có 9 năm thâm niên được nghỉ bao nhiêu ngày phép năm và lương trong khoảng nào?",
+      "answer_a": "# Chính sách nghỉ phép không lương\n> Phiên bản: 1.2 | Ngày hiệu lực: 01/07/2023 | Phòng ban: Nhân sự\n\n## Điều kiện áp dụng\nNhân viên chính thức đã hết phép năm có thể xin nghỉ phép không lương. Thời gian nghỉ phép không lương tối đa là **30 ngày** trong một năm dương lịch. Nghỉ phép không lương không được tính thâm niên.\n\n## Quy trình phê duyệt\nĐơn xin nghỉ phép không lương phải được nộp trước ít nhất 7 ngày làm việc. Nghỉ từ 1-5 ngày: trưởng phòng phê duyệt. Nghỉ từ 6-15 ngày: cần thêm phê duyệt của Giám đốc Nhân sự. Nghỉ từ 16-30 ngày: cần phê duyệt của **Giám đốc điều hành (CEO)**.\n\n## Ảnh hưởng đến phúc lợi\nTrong thời gian nghỉ không lương, nhân viên không được hưởng lương và các khoản phụ cấp. Bảo hiểm y tế vẫn được duy trì nếu nghỉ dưới 14 ngày. Nghỉ trên 14 ngày, nhân viên cần tự đóng phần bảo hiểm của mình.\n",
+      "answer_b": "Theo chính sách v2024: 15 ngày cơ bản + 3 ngày thâm niên (9÷3=3) = 18 ngày phép. Lương Senior (P3-P4): 20-35 triệu VNĐ/tháng.",
+      "winner_pass1": "A",
+      "winner_pass2": "A",
+      "final_winner": "A",
+      "reasoning_pass1": "Deterministic fallback selected answer A by lexical relevance and content coverage.",
+      "reasoning_pass2": "Deterministic fallback selected answer B by lexical relevance and content coverage.",
+      "position_consistent": true,
+      "scores_pass1": {
+        "A": 0.79,
+        "B": 0.479
+      },
+      "scores_pass2": {
+        "A": 0.79,
+        "B": 0.479
+      }
+    },
+    {
+      "question": "Nhân viên được tài trợ khóa học 25 triệu, nghỉ việc sau 8 tháng. Phải hoàn trả bao nhiêu?",
+      "answer_a": "# Chính sách hoàn chi đào tạo\n> Phiên bản: 1.1 | Ngày hiệu lực: 01/07/2023 | Phòng ban: Nhân sự & Tài chính\n\n## Điều kiện được tài trợ\nCông ty chi trả chi phí đào tạo bên ngoài (chứng chỉ, khóa học dài hạn, hội thảo) cho nhân viên có **thâm niên từ 1 năm trở lên**. Chi phí được tài trợ tối đa **30.000.000 VNĐ/khóa** và cần phê duyệt của Giám đốc phòng ban.\n\n## Cam kết hoàn chi\nNhân viên được tài trợ đào tạo phải **cam kết làm việc tại công ty ít nhất 1 năm** sau khi hoàn thành khóa học. Nếu nghỉ việc trước thời hạn cam kết, nhân viên phải hoàn trả **100% chi phí** đào tạo đã được tài trợ.\n\n## Quy trình\n1. Nộp đơn đề xuất đào tạo kèm chương trình chi tiết\n2. Trưởng phòng đánh giá mức độ liên quan đến công việc\n3. Phòng Nhân sự xem xét ngân sách\n4. Ký cam kết hoàn chi trước khi đăng ký khóa học\n",
+      "answer_b": "Nhân viên phải cam kết làm việc ít nhất 1 năm sau khi hoàn thành khóa học. Nghỉ sau 8 tháng là trước hạn cam kết, phải hoàn trả 100% chi phí tức 25.000.000 VNĐ.",
+      "winner_pass1": "tie",
+      "winner_pass2": "tie",
+      "final_winner": "tie",
+      "reasoning_pass1": "Deterministic fallback found equal scores.",
+      "reasoning_pass2": "Deterministic fallback found equal scores.",
+      "position_consistent": true,
+      "scores_pass1": {
+        "A": 0.779,
+        "B": 0.779
+      },
+      "scores_pass2": {
+        "A": 0.779,
+        "B": 0.779
+      }
+    },
+    {
+      "question": "Nhân viên tạm ứng 8 triệu, chưa thanh toán sau 30 ngày. Ai phê duyệt và phí phạt là bao nhiêu?",
+      "answer_a": "# Chính sách tạm ứng\n> Phiên bản: 1.0 | Ngày hiệu lực: 01/01/2024 | Phòng ban: Tài chính\n\n## Hạn mức tạm ứng\nNhân viên có thể tạm ứng tối đa **20.000.000 VNĐ** cho mỗi lần đề xuất. Tạm ứng phải ghi rõ mục đích: công tác, mua sắm, tổ chức sự kiện hoặc chi phí dự án.\n\n## Thời hạn thanh toán\nKhoản tạm ứng phải được thanh toán (nộp chứng từ hoàn ứng) trong vòng **15 ngày** kể từ ngày nhận tiền. Trường hợp công tác dài ngày, thời hạn tính từ ngày kết thúc chuyến công tác.\n\n## Phạt quá hạn\nKhoản tạm ứng chưa thanh toán sau 15 ngày sẽ bị tính phí **2%/tháng** trên số tiền chưa hoàn ứng. Phí này được khấu trừ vào lương tháng kế tiếp. Nhân viên có khoản tạm ứng chưa thanh toán sẽ không được phê duyệt tạm ứng mới.\n\n## Phê duyệt\nTạm ứng dưới 5.000.000 VNĐ: trưởng phòng phê duyệt. Từ 5.000.000 VNĐ trở lên: cần thêm phê duyệt Kế toán trưởng.\n",
+      "answer_b": "Phê duyệt: 8 triệu (≥5 triệu) cần Trưởng phòng + Kế toán trưởng. Phí phạt quá hạn 15 ngày: 2%/tháng × 8.000.000 × (15/30) = 80.000 VNĐ. Không được tạm ứng mới cho đến khi hoàn ứng.",
+      "winner_pass1": "A",
+      "winner_pass2": "A",
+      "final_winner": "A",
+      "reasoning_pass1": "Deterministic fallback selected answer A by lexical relevance and content coverage.",
+      "reasoning_pass2": "Deterministic fallback selected answer B by lexical relevance and content coverage.",
+      "position_consistent": true,
+      "scores_pass1": {
+        "A": 0.733,
+        "B": 0.667
+      },
+      "scores_pass2": {
+        "A": 0.733,
+        "B": 0.667
+      }
+    },
+    {
+      "question": "Nhân viên Manager có thâm niên 12 năm: tổng phụ cấp hàng tháng và số ngày phép năm?",
+      "answer_a": "# Chính sách nghỉ phép không lương\n> Phiên bản: 1.2 | Ngày hiệu lực: 01/07/2023 | Phòng ban: Nhân sự\n\n## Điều kiện áp dụng\nNhân viên chính thức đã hết phép năm có thể xin nghỉ phép không lương. Thời gian nghỉ phép không lương tối đa là **30 ngày** trong một năm dương lịch. Nghỉ phép không lương không được tính thâm niên.\n\n## Quy trình phê duyệt\nĐơn xin nghỉ phép không lương phải được nộp trước ít nhất 7 ngày làm việc. Nghỉ từ 1-5 ngày: trưởng phòng phê duyệt. Nghỉ từ 6-15 ngày: cần thêm phê duyệt của Giám đốc Nhân sự. Nghỉ từ 16-30 ngày: cần phê duyệt của **Giám đốc điều hành (CEO)**.\n\n## Ảnh hưởng đến phúc lợi\nTrong thời gian nghỉ không lương, nhân viên không được hưởng lương và các khoản phụ cấp. Bảo hiểm y tế vẫn được duy trì nếu nghỉ dưới 14 ngày. Nghỉ trên 14 ngày, nhân viên cần tự đóng phần bảo hiểm của mình.\n",
+      "answer_b": "Phụ cấp tháng: ăn trưa 1.000.000 + điện thoại Manager 500.000 = 1.500.000 VNĐ. Phép năm v2024: 15 ngày cơ bản + 4 ngày thâm niên (12÷3=4) = 19 ngày phép.",
+      "winner_pass1": "A",
+      "winner_pass2": "A",
+      "final_winner": "A",
+      "reasoning_pass1": "Deterministic fallback selected answer A by lexical relevance and content coverage.",
+      "reasoning_pass2": "Deterministic fallback selected answer B by lexical relevance and content coverage.",
+      "position_consistent": true,
+      "scores_pass1": {
+        "A": 0.753,
+        "B": 0.699
+      },
+      "scores_pass2": {
+        "A": 0.753,
+        "B": 0.699
+      }
+    },
+    {
+      "question": "Nhân viên được nghỉ bao nhiêu ngày phép năm?",
+      "answer_a": "# Chính sách nghỉ phép đặc biệt\n> Phiên bản: 1.1 | Ngày hiệu lực: 01/03/2024 | Phòng ban: Nhân sự\n\n## Các trường hợp được nghỉ phép đặc biệt\nNhân viên được nghỉ có lương trong các trường hợp sau đây mà không trừ vào phép năm:\n- **Kết hôn**: 3 ngày làm việc\n- **Tang lễ** (cha mẹ, vợ/chồng, con): 3 ngày làm việc\n- **Sinh con** (nam giới): 5 ngày làm việc liên tục\n- **Con kết hôn**: 1 ngày làm việc\n\n## Hồ sơ cần thiết\nNhân viên cần cung cấp giấy tờ chứng minh trong vòng 5 ngày làm việc sau khi quay lại: giấy đăng ký kết hôn, giấy khai tử, giấy khai sinh. Trường hợp không cung cấp đầy đủ, số ngày nghỉ sẽ bị trừ vào phép năm.\n\n## Lưu ý\nPhép đặc biệt không cộng dồn và không chuyển sang năm sau. Ngày nghỉ được tính liên tục bao gồm cả ngày nghỉ cuối tuần nếu rơi vào giữa kỳ nghỉ.\n",
+      "answer_b": "Theo chính sách v2024 HIỆN HÀNH: 15 ngày cơ bản (+1 ngày/3 năm thâm niên). Chính sách v2023 (đã bị thay thế) là 12 ngày. RAG có thể retrieve cả 2 tài liệu — câu trả lời đúng phải ưu tiên v2024.",
+      "winner_pass1": "A",
+      "winner_pass2": "A",
+      "final_winner": "A",
+      "reasoning_pass1": "Deterministic fallback selected answer A by lexical relevance and content coverage.",
+      "reasoning_pass2": "Deterministic fallback selected answer B by lexical relevance and content coverage.",
+      "position_consistent": true,
+      "scores_pass1": {
+        "A": 0.922,
+        "B": 0.456
+      },
+      "scores_pass2": {
+        "A": 0.922,
+        "B": 0.456
+      }
+    },
+    {
+      "question": "Nhân viên thử việc có được nghỉ phép năm không?",
+      "answer_a": "# Chính sách thử việc\n> Phiên bản: 1.2 | Ngày hiệu lực: 01/01/2024 | Phòng ban: Nhân sự\n\n## Thời gian thử việc\nThời gian thử việc tiêu chuẩn là **60 ngày** kể từ ngày bắt đầu làm việc. Đối với vị trí quản lý cấp cao (Manager trở lên), thời gian thử việc có thể kéo dài đến 90 ngày.\n\n## Lương thử việc\nNhân viên thử việc được nhận **85% mức lương** của cấp bậc tương ứng theo bảng lương công ty. Phụ cấp ăn trưa được áp dụng đầy đủ từ ngày đầu tiên.\n\n## Quyền lợi trong thử việc\nNhân viên thử việc **KHÔNG được nghỉ phép năm**. Trường hợp cần nghỉ việc riêng, nhân viên thử việc phải xin nghỉ không lương và được trưởng phòng phê duyệt. Nhân viên thử việc được tham gia bảo hiểm xã hội bắt buộc nhưng chưa được hưởng gói bảo hiểm sức khỏe PVI.\n\n## Đánh giá thử việc\nQuản lý trực tiếp thực hiện đánh giá vào ngày thứ 30 (giữa kỳ) và ngày thứ 55 (cuối kỳ). Kết quả đánh giá quyết định việc ký hợp đồng chính thức.\n",
+      "answer_b": "KHÔNG. Nhân viên thử việc không được nghỉ phép năm. Nếu cần nghỉ phải xin nghỉ không lương và được trưởng phòng phê duyệt. Đây là negation trap — câu trả lời đúng là phủ định.",
+      "winner_pass1": "A",
+      "winner_pass2": "A",
+      "final_winner": "A",
+      "reasoning_pass1": "Deterministic fallback selected answer A by lexical relevance and content coverage.",
+      "reasoning_pass2": "Deterministic fallback selected answer B by lexical relevance and content coverage.",
+      "position_consistent": true,
+      "scores_pass1": {
+        "A": 1.0,
+        "B": 0.93
+      },
+      "scores_pass2": {
+        "A": 1.0,
+        "B": 0.93
+      }
+    },
+    {
+      "question": "Nhân viên Manager có thể dùng VPN cá nhân (NordVPN) khi WFH không?",
+      "answer_a": "# Chính sách làm việc từ xa (WFH)\n> Phiên bản: 2.0 | Ngày hiệu lực: 01/07/2024 | Phòng ban: Nhân sự\n\n## Quy định chung\nNhân viên chính thức được phép làm việc từ xa tối đa **2 ngày/tuần**. Lịch WFH phải được đăng ký và phê duyệt bởi quản lý trực tiếp vào **thứ Hai** đầu tuần.\n\n## Yêu cầu kỹ thuật\n- Kết nối **VPN** bắt buộc khi làm việc từ xa\n- Đảm bảo đường truyền internet ổn định (tối thiểu 20Mbps)\n- Sử dụng thiết bị công ty hoặc thiết bị cá nhân đã cài MDM\n- Tham gia đầy đủ các cuộc họp online theo lịch\n\n## Hạn chế\nMột số vị trí không được áp dụng WFH: lễ tân, nhân viên kho, bảo vệ, nhân viên vận hành hạ tầng IT. Trong các tuần có sự kiện toàn công ty (All-hands, Team building), WFH không được áp dụng.\n\n## Đánh giá\nQuyền WFH có thể bị thu hồi nếu nhân viên không đáp ứng KPI hoặc vi phạm quy định WFH quá 2 lần trong 1 quý.\n",
+      "answer_b": "KHÔNG. Chính sách VPN v1.3 cấm sử dụng VPN cá nhân (NordVPN, ExpressVPN) trong mạng công ty. Bắt buộc dùng VPN WireGuard của công ty. Đây là policy contradiction trap — câu hỏi nghe hợp lý nhưng vi phạm chính sách.",
+      "winner_pass1": "A",
+      "winner_pass2": "A",
+      "final_winner": "A",
+      "reasoning_pass1": "Deterministic fallback selected answer A by lexical relevance and content coverage.",
+      "reasoning_pass2": "Deterministic fallback selected answer B by lexical relevance and content coverage.",
+      "position_consistent": true,
+      "scores_pass1": {
+        "A": 0.825,
+        "B": 0.65
+      },
+      "scores_pass2": {
+        "A": 0.825,
+        "B": 0.65
+      }
+    }
+  ],
+  "kappa": {
+    "value": 0.0,
+    "sample_size": 10,
+    "judge_labels": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "human_labels": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ]
+  },
+  "bias": {
+    "total_judged": 10,
+    "position_bias_rate": 0.0,
+    "position_bias_count": 0,
+    "verbosity_bias": 1.0,
+    "verbosity_details": {
+      "a_wins_a_longer": 8,
+      "b_wins_b_longer": 0,
+      "total_decisive": 8
+    },
+    "interpretation": "Position bias thấp — judge ổn định."
+  }
+}
